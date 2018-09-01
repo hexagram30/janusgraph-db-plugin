@@ -1,14 +1,14 @@
-(ns hxgm30.graphdb.plugin.janusgraph.api.db
+(ns hxgm30.db.plugin.janusgraph.api.db
   "* https://static.javadoc.io/org.janusgraph/janusgraph-core/0.2.0/org/janusgraph/graphdb/tinkerpop/JanusGraphBlueprintsGraph.html
    * https://static.javadoc.io/org.janusgraph/janusgraph-core/0.2.0/org/janusgraph/graphdb/database/StandardJanusGraph.html"
   (:require
-    [hxgm30.graphdb.util :as util]
+    [hxgm30.db.util :as util]
     [taoensso.timbre :as log])
   (:import
     (org.janusgraph.graphdb.database StandardJanusGraph))
   (:refer-clojure :exclude [flush]))
 
-(load "/hxgm30/graphdb/plugin/protocols/db")
+(load "/hxgm30/db/plugin/protocols/db")
 
 (defn -add-edge
   [this src dst label]

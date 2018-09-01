@@ -1,0 +1,11 @@
+{:logging {
+   :nss [
+     hxgm30
+     org.janusgraph]
+   :level :debug}
+ :backend {
+   :plugin :janusgraph
+   :janusgraph {
+     :storage {
+       :backend "berkeleyje"
+       :directory "data/graphdb/janus"}}}}

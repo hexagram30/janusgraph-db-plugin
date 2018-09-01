@@ -1,4 +1,4 @@
-(ns hxgm30.graphdb.plugin.janusgraph.api.factory
+(ns hxgm30.db.plugin.janusgraph.api.factory
   (:require
     [clojure.java.io :as io]
     [taoensso.timbre :as log])
